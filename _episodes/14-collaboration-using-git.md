@@ -200,7 +200,7 @@ $ git push origin main
 > by resetting the remote repository URL setting on your local repo:
 > 
 > ~~~
-> $ git remote set-url origin git@github.com:<YOUR_GITHUB_USERNAME>/python-intermediate-inflammation
+> $ git remote set-url origin git@github.com:<YOUR_GITHUB_USERNAME>/python-intermediate-inflammation.git
 > ~~~
 > {: .language-bash}
 {: .caution}

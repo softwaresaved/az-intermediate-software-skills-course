@@ -6,7 +6,7 @@ You will need the following software installed and working correctly on your sys
 
 > ## Common Issues & Tips
 > If you are having issues installing or running some of the tools below,
-check a list of [common issues](../common-issues) other course participants encountered and some useful tips for using the tools and working through the material.
+check a list of [common issues](./common-issues/index.html) other course participants encountered and some useful tips for using the tools and working through the material.
 {: .callout}
 
 ## Command Line Tool
@@ -212,7 +212,7 @@ please head to [Python.org](https://www.python.org/downloads/).
 Please make sure not to use Anaconda as it is not free for commercial use.*
 
 >## Recommended Python Version
-> We recommend using at least Python version 3.8+ but any [supported version](https://devguide.python.org/#status-of-python-branches) should work (i.e. version 3.7 onward. 
+> We recommend using at least Python version 3.8+ but any [supported version](https://devguide.python.org/versions/#versions) should work (i.e. version 3.7 onward. 
 > Specifically, we recommend upgrading from Python 2.7 wherever possible; continuing to use it will likely result in difficulty finding supported dependencies or syntax errors).
 {: .callout}
 
