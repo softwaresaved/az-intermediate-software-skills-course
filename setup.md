@@ -172,6 +172,15 @@ When creating the token, give it a memorable name, and ensure it is set with the
 personal access token to authenticate yourself to 
 GitHub from the command line (e.g. when you want to push your local changes to your code repository on GitHub).
 {: .callout}
+                   
+### Sharing Sensitive Information on GitHub
+
+> ## Warning
+> As part of this course we are not working or sharing any sensitive data. However, you should 
+> still be careful not to upload any AstraZeneca-related work to a public repository outside 
+> the AstraZeneca Enterprise GitHub, make sure to choose a working directory for this course
+> outside of any AstraZeneca work and follow AstraZeneca guidelines on using GitHub.
+{: .caution}
 
 ## Python Distribution
 The material has been developed using the [standard Python distribution version 3.8](https://www.python.org/downloads/)

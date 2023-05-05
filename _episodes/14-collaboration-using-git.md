@@ -30,6 +30,12 @@ software development workflow - you work locally on code, test it to make sure
 it works correctly and as expected, then record your changes using version control and share your work with others 
 via a shared and centrally backed-up repository.
 
+> ## Sharing Sensitive Information og GitHub
+> As part of this course we are not working or sharing any sensitive data. However, you should
+> still be careful not to upload any AstraZeneca-related work to a public repository outside
+> the AstraZeneca Enterprise GitHub and follow AstraZeneca guidelines on using GitHub.
+{: .caution}
+
 Firstly, let's remind ourselves how to work with Git from the command line.
 
 ## Git Refresher
