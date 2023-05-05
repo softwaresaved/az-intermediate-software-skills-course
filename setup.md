@@ -9,7 +9,7 @@ You will need the following software installed and working correctly on your sys
 check a list of [common issues](./common-issues/index.html) other course participants encountered and some useful tips for using the tools and working through the material.
 {: .callout}
 
-## Command Line Tool
+## Command Line/Git Bash Tool
 You will need a command line tool (shell/console) in order to run Python scripts and version control your code with Git.
 - On Windows, it is recommended to use **Git Bash** (which is included in
   [Git For Windows package](https://gitforwindows.org/) - see the Git installation section below). The use of Windows command line tool `cmd` is not suitable for the course.
@@ -33,9 +33,7 @@ Wed 21 Apr 2021 11:38:19 BST
 ## Git Version Control Tool
 Git is a program that can be accessed from your command line tool.
 
-- On Windows, it is recommended to use **Git Bash**, which comes included as part of the [Git For Windows package](https://gitforwindows.org/) and will
-  install the Bash command line tool as well as Git.
-  - *For AstraZeneca-managed computers (where you may not have admin permissions), you can obtain Git For Windows package from the AstraZeneca Software Store.*
+- On Windows, it is recommended to use **Git Bash**, which comes included as part of the **Git For Windows package**. It ca be obtained from the AstraZeneca Software Store by searching for “Git” and finding the icon called “Git 2.33” (or similar) and then clicking the “Request install” button. Alternatively, you can obtain it from the [**Git For Windows** package website](https://gitforwindows.org/).
 - On macOS, Git is included as part of Apple's [Xcode tools](https://en.wikipedia.org/wiki/Xcode)
   and should be available from the command line as long as you have XCode. If you do not have XCode installed, you can download it from
   [Apple's App Store](https://apps.apple.com/us/app/xcode/id497799835?mt=12) or you can
@@ -111,7 +109,47 @@ $ git config --global core.editor "nano -w"
 ~~~
 {: .language-bash}
 
-Make sure to use the same email address you used to open an account on GitHub that you will use for this course (see below).
+Make sure to use the same email address you used to 
+[open an account on GitHub](#github-account) that you will use for this course 
+(see below for GitHub setup instructions).
+
+### Proxy Settings for Git
+When you run Git commands from the command line/Git Bash, your computer connects to 
+the Internet. For security reasons, AstraZeneca computers block all Internet 
+connections that do not go through the AstraZeneca proxy server. However, on the
+AstraZeneca wired network and the *AZ-Corporate* wifi, connections from the command
+line/Git Bash are not automatically routed through the proxy which often results in error messages that report “Time out” (caused by the command line/Git Bash trying to connect to the Internet but being constantly stopped by the AstraZeneca network, until it reaches the time limit and crashes with the error).
+
+To allow your command line/Git Bash to connect to the Internet when on these
+networks, you need to specify that the Git commands should use the AstraZeneca
+proxy, by amending `.gitconfig` file in your home directory (e.g.
+`C:\Users\abcd057\.gitconfig` on Windows or `\Users\abcd057\.gitconfig` on
+Mac/Linux). If `.gitconfig` file does not exist on your system, you can create it yourself. You will need to append the following lines to it:
+
+~~~
+[alias]
+unproxy = config --global --remove-section http
+unproxy2 = config --global --remove-section https
+proxy = config --global http.proxy <proxy-server>:<proxy:port>
+proxy2 = config --global https.proxy <proxy-server>:<proxy:port>
+~~~
+{: .language-bash}
+
+You can obtain your `<proxy-server>:<proxy:port>` settings from the AstraZeneca IT support.
+
+If you are on the AstraZeneca wired network or the *AZ-Corporate* wifi, you can turn
+on the proxy by issuing the following command from your command line/Git Bash:
+~~~
+$ git proxy
+~~~
+{: .language-bash}
+
+If you are on the *AZ-Guest* wifi or your home wifi, turn off the proxy by issuing the following command from your command line/Git Bash:
+
+~~~
+$ git unproxy
+~~~
+{: .language-bash}
 
 ### GitHub Account
 GitHub is a free, online host for Git repositories that you will use during the course to store your code in so 
