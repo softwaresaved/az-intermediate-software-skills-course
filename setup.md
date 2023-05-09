@@ -135,7 +135,7 @@ proxy2 = config --global https.proxy <proxy-server>:<proxy:port>
 ~~~
 {: .language-bash}
 
-You can obtain your `<proxy-server>:<proxy:port>` settings from the AstraZeneca IT support.
+You can obtain your `<proxy-server>:<proxy:port>` settings from the AstraZeneca IT support or from the trainers at your workshop.
 
 If you are on the AstraZeneca wired network or the *AZ-Corporate* wifi, you can turn
 on the proxy by issuing the following command from your command line/Git Bash:
