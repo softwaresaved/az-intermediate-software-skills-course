@@ -153,7 +153,7 @@ $ git unproxy
 
 ### GitHub Account
 GitHub is a free, online host for Git repositories that you will use during the course to store your code in so 
-you will need to open a free [GitHub](https://github.com/) account unless you don't already have one.
+you will need to open a free [GitHub](https://github.com/) account if you don't already have one.
 
 ### Secure Access To GitHub Using Git From Command Line
 In order to access GitHub using Git from your machine securely, you need to set up a way of authenticating yourself 
@@ -181,6 +181,29 @@ GitHub from the command line (e.g. when you want to push your local changes to y
 > the AstraZeneca Enterprise GitHub, make sure to choose a working directory for this course
 > outside of any AstraZeneca work and follow AstraZeneca guidelines on using GitHub.
 {: .caution}
+
+### Testing your Git and Proxy Set Up
+Once you have created a personal GitHub account (if you don't already have one), installed and configured your Git installation, and configured your proxy settings as above, to save time at the workshop please do the following to verify that you have done this correctly:
+
+1. Using your personal GitHub account, create a public repository on GitHub.
+2. Clone the new repository on your local machine, e.g.:
+   ~~~
+   $ git clone <github_repository_url>
+   ~~~
+   {: .language-bash}
+
+3. Create a new text file named README.txt in the root directory of the cloned repository, containing anything you like.
+4. Add and commit the new file to the repository, and push the change to GitHub, e.g.
+
+   ~~~
+   $ git add README.txt
+   $ git commit -m "Initial readme file commit"
+   $ git push -u origin main
+   ~~~
+   {: .language-bash}
+
+5. Copy and paste the URL of the GitHub repository, along with your name, into the [shared Google Document](https://docs.google.com/document/d/1KpLCI_1OkY8v879XSZ0rB_lp2JqroBESg2CRT133Z1k/edit#).
+
 
 ## Python Distribution
 The material has been developed using the [standard Python distribution version 3.8](https://www.python.org/downloads/)
