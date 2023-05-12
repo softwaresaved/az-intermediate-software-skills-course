@@ -186,14 +186,20 @@ GitHub from the command line (e.g. when you want to push your local changes to y
 Once you have created a personal GitHub account (if you don't already have one), installed and configured your Git installation, and configured your proxy settings as above, to save time at the workshop please do the following to verify that you have done this correctly:
 
 1. Using your personal GitHub account, create a public repository on GitHub.
-2. Clone the new repository on your local machine, e.g.:
+2. If you are on an AstraZeneca Windows computer, from GitBash navigate to your user directory (otherwise you may not have the permission to write files):
+   ~~~
+   $ cd
+   ~~~
+   {: .language-bash}
+
+3. Clone the new repository on your local machine, e.g.:
    ~~~
    $ git clone <github_repository_url>
    ~~~
    {: .language-bash}
 
-3. Create a new text file named README.txt in the root directory of the cloned repository, containing anything you like.
-4. Add and commit the new file to the repository, and push the change to GitHub, e.g.
+4. Create a new text file named README.txt in the root directory of the cloned repository, containing anything you like.
+5. Add and commit the new file to the repository, and push the change to GitHub, e.g.
 
    ~~~
    $ git add README.txt
@@ -202,7 +208,7 @@ Once you have created a personal GitHub account (if you don't already have one),
    ~~~
    {: .language-bash}
 
-5. Copy and paste the URL of the GitHub repository, along with your name, into the [shared Google Document](https://docs.google.com/document/d/1KpLCI_1OkY8v879XSZ0rB_lp2JqroBESg2CRT133Z1k/edit#).
+6. Copy and paste the URL of the GitHub repository, along with your name, into the [shared Google Document](https://docs.google.com/document/d/1KpLCI_1OkY8v879XSZ0rB_lp2JqroBESg2CRT133Z1k/edit#).
 
 
 ## Python Distribution
