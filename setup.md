@@ -158,14 +158,15 @@ you will need to open a free [GitHub](https://github.com/) account if you don't 
 ### Secure Access To GitHub Using Git From Command Line
 In order to access GitHub using Git from your machine securely, you need to set up a way of authenticating yourself 
 with GitHub through Git. For the purposes of this training, by default and to avoid any issues, you should create and
-use a "fine-grained" GitHub personal access token by following [these instructions](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-fine-grained-personal-access-token). 
+use a "classic" GitHub personal access token by following [these instructions](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-personal-access-token-classic). 
 When creating the token, give it a memorable name, and ensure it is set with the following:
 
 - Expiration: 60 days
-- Repository access: "All repositories"
-- Permissions
-  - For "Actions", set access to be "Read and write"
-  - For "Workflows", set access to be "Read and write"
+- Select the following scopes:
+  - "repo": select all, by selecting "repo"
+  - "workflow"
+  - "admin:org": select "read:org"
+  - "gist"
 
 > ## What About Using my GitHub Password?
 > Using GitHub passwords to access GitHub is now prohibited. On 13 August 2021, GitHub [strengthened security requirements for all authenticated Git operations](https://github.blog/changelog/2021-08-12-git-password-authentication-is-shutting-down/). For this reason, and for expediency in delivering this training, by default it's recommended that you use a 

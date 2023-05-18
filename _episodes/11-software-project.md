@@ -47,7 +47,7 @@ The project is not finished and contains some errors. You will be working on you
 To start working on the project, you will first create a copy of the software project template repository from 
 GitHub within your own GitHub account and then obtain a local copy of that project (from your GitHub) on your machine.
 
-1. Make sure you have a GitHub account and that you have set up your SSH key pair for authentication with GitHub, as 
+1. Make sure you have a GitHub account and that you have created a personal access token with GitHub, as 
 explained in [Setup](../setup.html#secure-access-to-github-using-git-from-command-line).
 2. Log into your GitHub account. 
 3. Go to the [software project template repository](https://github.com/carpentries-incubator/python-intermediate-inflammation) in GitHub.
@@ -65,13 +65,12 @@ anything you like, but it may be easier for future group exercises if everyone u
 ![View of the own copy of the software template repository in GitHub](../fig/own-template-repository.png){: .image-with-shadow width="800px" }
 
 > ## Exercise: Obtain the Software Project Locally
-> Using the command line, clone the copied repository from your GitHub account into the home directory on your computer using SSH.
+> Using the command line, clone the copied repository from your GitHub account into the home directory on your computer.
 > Which command(s) would you use to get a detailed list of contents of the directory you have just cloned?
 > > ## Solution
-> > 1. Find the SSH URL of the software project repository to clone from your GitHub account. Make sure you do not clone the
-original template repository but rather your own copy, as you should be able to push commits to it later on. Also 
-make sure you select the **SSH tab** and not the **HTTPS** one - you'll be able to clone with HTTPS, but not to send your changes back to GitHub!
-> > ![URL to clone the repository in GitHub](../fig/clone-repository.png){: .image-with-shadow width="800px" }
+> > 1. Find the URL of the software project repository to clone from your GitHub account. Make sure you do not clone the
+original template repository but rather your own copy, as you should be able to push commits to it later on. Make sure you use
+> > the *HTTPS* link, and not the *SSH* one.
 > > 2. Make sure you are located in your home directory in the command line with:
 > >     ~~~
 > >     $ cd ~
@@ -79,7 +78,7 @@ make sure you select the **SSH tab** and not the **HTTPS** one - you'll be able 
 > >     {: .language-bash}
 > > 3. From your home directory in the command line, do:
 > >     ~~~
-> >     $ git clone git@github.com:<YOUR_GITHUB_USERNAME>/python-intermediate-inflammation.git
+> >     $ git clone https://github.com:<YOUR_GITHUB_USERNAME>/python-intermediate-inflammation.git
 > >     ~~~
 > >     {: .language-bash}
 > > Make sure you are cloning your copy of the software project and not the template repository.
@@ -87,12 +86,6 @@ make sure you select the **SSH tab** and not the **HTTPS** one - you'll be able 
 > > 4. Navigate into the cloned repository folder in your command line with:
 > >     ~~~
 > >     $ cd python-intermediate-inflammation
-> >     ~~~
-> >     {: .language-bash}
-> > Note: If you have accidentally copied the **HTTPS** URL of your repository instead of the SSH one, you can easily fix that from
-> > your project folder in the command line with:
-> >     ~~~ 
-> >     $ git remote set-url origin git@github.com:<YOUR_GITHUB_USERNAME>/python-intermediate-inflammation.git
 > >     ~~~
 > >     {: .language-bash}
 > {: .solution}
